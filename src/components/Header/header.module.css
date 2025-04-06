@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  min-height: 25px;
+  background-color: #fcfcfc;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.imageContainer img {
+  width: 200px;
+  height: 100px;
+}
+
+.inputContainer {
+  width: 50%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #67789b;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fcfcfc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.searchInput:focus {
+  border-color: #002d82;
+  box-shadow: 0 0 8px rgba(0, 45, 130, 0.3);
+  background-color: #ffffff;
+}
+
+.searchInput::placeholder {
+  color: #90a3c7;
+  opacity: 1;
+  padding-right: 2px;
+  font-style: italic;
+}
+.card {
+  display: flex;
+}
