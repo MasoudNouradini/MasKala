@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./header.module.css";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
   return (
@@ -17,6 +18,7 @@ const Header = () => {
             type="text"
             placeholder="کالا مورد نظر خود را جستجو کنید"
           />
+          <CiSearch className={styles.searchIcon} />
         </div>
         <div className={styles.card}>
           <Link to={"/card"}>

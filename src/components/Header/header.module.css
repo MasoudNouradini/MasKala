@@ -3,6 +3,7 @@
   min-height: 25px;
   background-color: #fcfcfc;
   width: 100%;
+  position: relative;
 }
 
 .main {
@@ -21,11 +22,12 @@
 
 .inputContainer {
   width: 50%;
+  position: relative;
 }
 
 .searchInput {
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 45px 12px 20px;
   font-size: 16px;
   border: 2px solid #67789b;
   border-radius: 10px;
@@ -33,6 +35,8 @@
   transition: all 0.3s ease;
   background-color: #fcfcfc;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: right;
+  direction: rtl;
 }
 
 .searchInput:focus {
@@ -44,8 +48,17 @@
 .searchInput::placeholder {
   color: #90a3c7;
   opacity: 1;
-  padding-right: 2px;
+  padding-right: 10px;
   font-style: italic;
+}
+.searchIcon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #102d64;
+  font-size: 20px;
+  z-index: 2;
 }
 .card {
   display: flex;
