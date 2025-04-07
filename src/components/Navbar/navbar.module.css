@@ -1,0 +1,58 @@
+.containerNavbar {
+  background-color: #f8f8f8;
+  padding: 1rem 2rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #007bff;
+}
+
+.activeLink {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 4px;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  list-style: none;
+  display: none;
+  z-index: 100;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownMenu li {
+  margin: 0.5rem 0;
+}
