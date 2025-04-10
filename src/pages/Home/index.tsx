@@ -1,8 +1,21 @@
+import { useSelector } from "react-redux";
 import ProductCard from "../../components/ProductCard";
 import { useGetSmartphonesQuery } from "../../services/productsApi";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const { data, error, isLoading } = useGetSmartphonesQuery();
+  const query = useSelector((state) => state.search.query);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+
+  useEffect(() => {
+    if (data?.products) {
+      const filtered = data.products.filter((product) =>
+        product.title.toLowerCase().includes(query.toLowerCase())
+      );
+      setFilteredProducts(filtered);
+    }
+  }, [data, query]);
 
   if (isLoading) return <p>در حال بارگذاری...</p>;
   if (error) return <p>خطا در دریافت اطلاعات!</p>;
@@ -21,7 +34,7 @@ const Home = () => {
           maxWidth: "1200px"
         }}
       >
-        {data?.products.map((product) => (
+        {filteredProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
