@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.imageContainer img {
+  width: 130px;
+}
+
+.inputContainer {
+  flex: 1;
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: crimson;
+  color: white;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+}
+
+/* 📱 Responsive for mobile/tablet */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .imageContainer {
+    align-self: center;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .badge {
+    position: absolute;
+    top: -13px;
+    right: 168px;
+    background-color: crimson;
+  }
+}

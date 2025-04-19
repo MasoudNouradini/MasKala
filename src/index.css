@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Vazirmatn", Arial, sans-serif;
+}
+/*#002D82
+#FCFCFC
+#D8DEEA
+#B4C0D9
+#90A3C7 */

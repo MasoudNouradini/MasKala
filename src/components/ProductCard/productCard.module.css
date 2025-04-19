@@ -1,0 +1,143 @@
+.card {
+  width: 220px;
+  height: auto; /* تغییر از ارتفاع ثابت به auto */
+  min-height: 380px; /* حداقل ارتفاع برای حفظ یکپارچگی */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.info {
+  flex: 1; /* جایگزین بهتر برای flex-grow */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* فاصله یکسان بین عناصر داخلی */
+  padding: 0.5rem 0; /* فاصله بالا و پایین */
+}
+
+.info h4 {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.8rem;
+  line-height: 1.4;
+}
+
+.info p {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #555;
+}
+
+.price {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* فاصله بیشتر بین دکمه‌ها */
+  margin-top: 1rem; /* فاصله از بخش اطلاعات */
+  padding-top: 0.5rem;
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+.detailsButton {
+  background-color: #fff;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.detailsButton:hover {
+  background-color: #007bff;
+  color: white;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .image {
+    height: 140px;
+  }
+
+  .info h4 {
+    font-size: 0.95rem;
+    min-height: 2.4rem;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+  }
+
+  .price {
+    font-size: 0.9rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .btn,
+  .detailsButton {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+}

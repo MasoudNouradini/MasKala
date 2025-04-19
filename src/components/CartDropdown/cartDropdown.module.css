@@ -1,0 +1,96 @@
+.dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  width: 320px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  text-align: right;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.quantity {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.itemsContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.title {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 12px;
+  color: #666;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.controls button {
+  background: #eee;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.total {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.viewCart {
+  display: block;
+  text-align: center;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+}

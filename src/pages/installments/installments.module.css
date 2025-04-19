@@ -1,0 +1,81 @@
+.containerRules {
+  margin-top: 10px;
+  padding: 10px;
+}
+.formContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+.calculateButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calculateButton:hover {
+  background-color: #3182ce;
+}
+
+.resultContainer {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f7fafc;
+  border-radius: 8px;
+}
+
+.resultItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.resultLabel {
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.resultValue {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.errorMessage {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
